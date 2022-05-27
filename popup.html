@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension</title>
+    <style type="text/css" >
+        body {
+            width: 300px;
+            height: 100px;
+        }
+    </style >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card"> 
+        <div class="card-body">
+            <h1>URL Shortener</h1>
+        <input type="url" class="form-control" id="url"placeholder="URL">
+        <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" value="" id="shorten-url" checked>
+            <label class="form-check-label" for="shorten-url">
+              Shorten URL
+            </label>
+        </div>
+        <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" value="" id="telegram-send" checked>
+            <label class="form-check-label" for="telegram-send">
+              Send to Telegram
+            </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="send-button">Send</button>
+        </div>
+    </div>
+</body>
+<script src="popup.js"></script>
+</html>
